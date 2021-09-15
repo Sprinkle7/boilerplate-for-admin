@@ -1,0 +1,41 @@
+@import "../../var.scss";
+.input__toggle {
+  font-size: 14px;
+  color: $checkBoxBorderColor;
+
+  .btn {
+    margin: 0px 5px;
+    background-color: transparent !important;
+    box-shadow: 0 0 0 0 !important;
+    border: 1px solid $toggleBtnDeactive !important;
+    position: relative;
+    padding: 0px;
+    min-height: 20px;
+    min-width: 40px;
+    transition: 0.2s;
+    border-radius: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: $toggleBtnDeactive;
+      top: -1px;
+      transition: 0.2s;
+    }
+
+    &.active--btn {
+      transition: 0.2s;
+      border-color: $toggleBtnActive !important;
+
+      &::after {
+        background-color: $toggleBtnActive;
+        left: calc(100% - 20px);
+        transition: 0.2s;
+      }
+    }
+  }
+}

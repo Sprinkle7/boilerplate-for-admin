@@ -1,0 +1,28 @@
+@import '../../../../var.scss';
+
+.personal__headings {
+  position: relative;
+  margin: 0px 25px;
+  padding-left: 30px;
+
+  h5 {
+    font-size: 18px;
+    color: $blackFontColor;
+    font-family: "semiBold";
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $lightGray;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 0px;
+  }
+
+  img {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+  }
+}

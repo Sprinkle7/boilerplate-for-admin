@@ -1,0 +1,110 @@
+@import '../../../../var.scss';
+
+tr {
+  td {
+    border-color: #f6f9fc !important;
+    color: #86888b !important;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+
+    .btn {
+      padding: 0px;
+      line-height: 0px;
+      background-color: transparent !important;
+      border: 0px;
+      box-shadow: 0 0 0 0 !important;
+    }
+
+    .vehicle {
+      position: relative;
+      padding-right: 20px;
+
+      .vehicle__name{
+        font-family: 'semiBold';
+        font-size: 12px;
+        color: #191D28;
+      }
+      .btn-group {
+        position: absolute;
+        right: 0px;
+        top: 6px;
+
+        .dropdown-menu {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border-color: $whiteBGBorderColor;
+          &.show {
+            left: calc(-163px / 2) !important;
+            top: 5px !important;
+
+            .select__vehicle {
+              position: relative;
+              border-top: 1px solid #f6f9fc;
+              padding: 1px ​0px;
+
+              .css-yk16xz-control{
+                border-width: 0px !important;
+              }
+
+              .css-1okebmr-indicatorSeparator{
+                background-color: #f6f9fc !important;
+              }
+
+              .css-26l3qy-menu{
+                border: 1px solid $whiteBGBorderColor !important;
+              }
+
+              * {
+                outline: none !important;
+                box-shadow: 0 0 0 0 !important;
+                color: #86888b;
+                border-color: #f6f9fc !important;
+
+                .css-1wa3eu0-placeholder {
+                  color: #86888b !important;
+                  font-size: 14px;
+                  text-align: center;
+                }
+              }
+
+              input {
+              }
+            }
+
+            .dropdown-item {
+              color: #86888b;
+              font-size: 14px;
+              border-top: 1px solid #f6f9fc;
+              background-color: #fff !important;
+              padding: 10px 10px;
+              text-align: left;
+              box-shadow: 0 0 0 0 !important;
+              outline: none !important;
+
+              &:nth-child(1) {
+                border: 0px;
+              }
+
+              &.disabled {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .reload {
+      span {
+        min-width: 80px;
+        display: inline-block;
+      }
+    }
+
+    .action__icons {
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}

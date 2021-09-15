@@ -1,0 +1,100 @@
+@import "../../var.scss";
+
+.breadcrumbs__wrap {
+  position: relative;
+  border-bottom: 1px solid #dee5ef;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: $primaryBlueColor;
+  }
+
+  h4 {
+    position: relative;
+    font-size: 1.4em;
+    font-family: "semibold";
+    color: $blackFontColor;
+  }
+
+  .btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    font-size: 14px;
+  }
+
+  .header__page__selected {
+    position: relative;
+    text-align: center;
+
+    .page__selected__main {
+      display: inline-block;
+
+      .selected__same {
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        margin: 0px 0px;
+        text-align: left;
+
+        &.border__selected {
+          position: relative;
+          min-width: 200px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 5px;
+            left: 45px;
+            border-top: 1px solid #dcddde;
+            top: 19px;
+          }
+        }
+
+        span {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          color: #424b5f;
+          font-family: "semiBold";
+          font-size: 16px;
+          margin-bottom: 5px;
+
+          &.active {
+            background-color: #99d2e3;
+            color: #fff;
+          }
+
+          &.page--done {
+            background-color: $primaryBlueColor;
+            color: $primaryBlueColor;
+            position: relative;
+            font-size: 0px;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 13px;
+              top: 16px;
+              width: 13px;
+              height: 5px;
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              border-bottom: 1px solid #fff;
+              border-left: 1px solid #fff;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

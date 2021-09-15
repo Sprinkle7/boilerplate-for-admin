@@ -1,0 +1,24 @@
+@import "../../../var.scss";
+
+.personal__wrap {
+  padding: 15px;
+}
+
+.picture--modifire {
+  margin-left: 55px;
+}
+
+.vehicle__features {
+  padding: 15px;
+  border-top: 1px solid $whiteBGBorderColor;
+
+  &:nth-child(1) {
+    border-top: 0px;
+  }
+
+  .modifire--checkBox {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: "semiBold";
+  }
+}

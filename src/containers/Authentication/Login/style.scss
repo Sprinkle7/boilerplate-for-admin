@@ -1,0 +1,114 @@
+@import '../../../App.scss';
+
+.login__page {
+  background-color: #008dba;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form__main {
+    width: 500px;
+
+    .error--message{
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .form__logo {
+      position: relative;
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .form__input {
+      position: relative;
+      background-color: #fff;
+      border-radius: 5px;
+      padding-bottom: 1px;
+
+      .input__wrap {
+        position: relative;
+        border-bottom: 1px solid #efefef;
+        padding-left: 80px;
+
+        .icons {
+          position: absolute;
+          left: 0px;
+          z-index: 1;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #67758d;
+          width: 80px;
+          top: 0px;
+          border-right: 1px solid #efefef;
+
+          img {
+            width: 20px;
+          }
+        }
+
+        .input__main {
+          position: relative;
+          padding: 15px;
+          padding-bottom: 0px;
+
+          label {
+            margin-bottom: 0px;
+            font-size: 14px;
+            color: #67758d;
+
+            &.red__border {
+              color: red;
+            }
+          }
+
+          .form-control {
+            position: relative;
+            padding-left: 0px;
+            border-color: #e3e3e3;
+            border: 0px;
+            box-shadow: 0 0 0 0 !important;
+            color: #67758d;
+
+            &:-webkit-autofill {
+              -webkit-text-fill-color: #67758d !important;
+              -webkit-box-shadow: 0 0 0 30px white inset !important;
+            }
+
+            &::placeholder {
+              color: #c1c8d1;
+              font-size: 14px;
+            }
+
+            &:focus {
+              background-color: #fff;
+              color: #67758d;
+            }
+          }
+        }
+      }
+
+      .login__button {
+        margin: 25px 0px;
+        text-align: center;
+        text-transform: capitalize;
+
+        .btn {
+          background-color: $primaryBlueColor;
+          padding: 6px 55px;
+          border: 0px;
+          box-shadow: 0 0 0 0 !important;
+        }
+      }
+    }
+  }
+}

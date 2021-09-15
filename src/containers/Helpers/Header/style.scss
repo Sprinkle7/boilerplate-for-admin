@@ -1,0 +1,64 @@
+.header__flex__main {
+  display: flex;
+
+  .header__bars__main {
+    width: 33.3vw;
+
+    .btn {
+      padding: 0px;
+      background-color: transparent !important;
+      border: 0px;
+      font-size: 20px;
+      box-shadow: 0 0 0 0 !important;
+    }
+    img {
+      width: 135px;
+      margin-left: 15px;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .header__searchbar__main {
+    width: 33.3vw;
+    text-align: center;
+
+    .top__search__input {
+      position: relative;
+
+      .form-control {
+        position: relative;
+        background-color: #33a4c7;
+        border: 0px;
+        font-size: 14px;
+        box-shadow: 0 0 0 0 !important;
+        border-radius: 0px;
+        min-height: 42px;
+        color: #fff;
+
+        &::placeholder {
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+
+      .btn {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        z-index: 1;
+        background-color: #fff;
+        color: #008dba;
+        border-radius: 8px;
+        padding: 3px 6px;
+        font-size: 14px;
+        border: 0px;
+      }
+    }
+  }
+
+  .header__username__notification {
+    width: 33.3vw;
+    text-align: right;
+  }
+}

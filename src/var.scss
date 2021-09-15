@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "regular";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-regular.ttf");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-light.ttf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-bold.ttf");
+}
+
+@font-face {
+  font-family: "black";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-black.ttf");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-semibold.ttf");
+}
+
+@font-face {
+  font-family: "extralight";
+  src: url("../src/assets/fonts/Titillium-web/titilliumweb-extralight.ttf");
+}
+
+$sideBarWidth: 15vw;
+$primaryBlueColor: #008db9;
+$lightGray: #97a4ba;
+$blackFontColor: #2e2f2f;
+$mainBackgroundGray: #f7f9fa;
+$whiteBGBorderColor: #dceaf4;
+$inputBorderColor: #ebeef3;
+$checkBoxBorderColor: #424b5f;
+$toggleBtnDeactive: #d9dbe0;
+$toggleBtnActive: $primaryBlueColor;

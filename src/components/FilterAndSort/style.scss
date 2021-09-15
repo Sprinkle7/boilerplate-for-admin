@@ -1,0 +1,71 @@
+@import '../../App.scss';
+
+.main__filter__wrap {
+  position: relative;
+  padding: 15px;
+
+  .title__filter {
+    position: relative;
+
+    h4 {
+      position: relative;
+      position: relative;
+      font-size: 1.4em;
+      margin-bottom: 1px;
+      color: $blackFontColor;
+    }
+
+    p {
+      position: relative;
+      font-size: 0.9rem;
+      color: $lightGray;
+      margin-bottom: 0px;
+
+      span {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .main__filter__flex {
+    position: relative;
+    display: flex;
+    justify-content: right;
+
+    .sorting__filter {
+      margin-left: 10px;
+      position: relative;
+
+      &.filter--one {
+        width: 35%;
+
+        span {
+          position: absolute;
+          right: 7px;
+          top: 7px;
+          z-index: 1;
+          font-size: 14px;
+          color: $primaryBlueColor;
+        }
+      }
+
+      &.filter--modifier {
+        width: 20%;
+      }
+
+      .form-control {
+        position: relative;
+        box-shadow: 0 0 0 0 !important;
+        border-color: $whiteBGBorderColor;
+        font-size: 14px;
+        color: $lightGray;
+
+        &::placeholder {
+          color: $lightGray;
+        }
+      }
+    }
+  }
+}

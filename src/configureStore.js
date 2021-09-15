@@ -3,7 +3,6 @@ import { applyMiddleware, createStore } from 'redux'
 import { routerMiddleware } from 'connected-react-router'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createRootReducer from '../src/reducers'
-import { reducer as formReducer } from 'redux-form'
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'
 

@@ -1,0 +1,39 @@
+@import "../../var.scss";
+
+.input__tile__main {
+  border: 1px solid $inputBorderColor;
+  overflow: hidden;
+  border-radius: 5px;
+
+  &.red--borders{
+    border-color: red !important;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: normal;
+    color: $blackFontColor;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    color: $lightGray;
+  }
+
+  .form-control {
+    border: 0px;
+    box-shadow: 0 0 0 0 !important;
+    font-family: "semiBold";
+    color: $blackFontColor;
+    height: 30px;
+    font-size: 14px;
+
+    &::-webkit-calendar-picker-indicator {
+      filter: invert(0.6);
+
+    }
+
+    &:-webkit-autofill {
+      -webkit-text-fill-color: $blackFontColor !important;
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+  }
+}
